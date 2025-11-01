@@ -92,7 +92,7 @@ export default function Home() {
                   <Link
                     href={url}
                     aria-label={name}
-                    className='duration-400 bg-background/50 text-foreground flex rounded-full p-2.5 transition hover:translate-y-1'
+                    className='duration-400 bg-background/60 text-foreground flex rounded-full p-2.5 transition hover:translate-y-1'
                   >
                     <Icon className='size-5' />
                   </Link>
@@ -139,7 +139,7 @@ export default function Home() {
                 width={58}
                 alt='seta indicando rolagem para baixo'
                 loading='eager'
-                className='mt-5 size-auto scale-50 transform animate-bounce select-none'
+                className='mt-5 h-10 w-auto scale-50 transform animate-bounce select-none drop-shadow-lg'
               />
             </div>
           </div>
