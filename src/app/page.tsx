@@ -117,7 +117,7 @@ export default function Home() {
                 <Link
                   key={name}
                   href={url}
-                  className='duration-400 md:w-45 flex cursor-pointer items-center gap-2 rounded-lg border border-white bg-black px-4 py-2 transition hover:translate-y-1'
+                  className='duration-400 md:w-45 border-foreground bg-background flex cursor-pointer items-center gap-2 rounded-lg border px-4 py-2 transition hover:translate-y-1'
                 >
                   <div>
                     <Icon className='size-8' />
