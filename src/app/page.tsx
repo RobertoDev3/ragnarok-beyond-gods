@@ -1,5 +1,6 @@
 import Logo from '@/assets/logo/ragnarok-logo.png';
 import Background from '@/assets/background/bg-yeXyXRoo.png';
+import Background2 from '@/assets/background/C12LvZZY.jpg';
 import { FacebookIcon } from '@/assets/icons/facebook-icon';
 import { YoutubeIcon } from '@/assets/icons/youtube-icon';
 import { TiktokIcon } from '@/assets/icons/tiktok-icon';
@@ -18,6 +19,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { cn } from '@/lib/utils';
 
 const socialLinks = [
   {
@@ -146,7 +148,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex h-dvh snap-start items-center justify-center'>
+      <section
+        style={
+          {
+            '--img': `url(${Background2.src})`,
+            '--speed': '20s',
+            '--tileH': '720px',
+            '--tileW': '1224px',
+          } as React.CSSProperties
+        }
+        className='bg-(image:--img) bg-size-[var(--tileW)_var(--tileH)] relative h-dvh animate-[bgScrollY_var(--speed)_linear_infinite] snap-start overflow-hidden bg-repeat'
+      >
         2
       </section>
 
