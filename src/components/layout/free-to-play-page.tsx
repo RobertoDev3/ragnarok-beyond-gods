@@ -92,9 +92,9 @@ export function FreeToPlayPage() {
       className='bg-(image:--img) bg-size-[var(--tileW)_var(--tileH)] relative h-dvh animate-[bgScrollY_var(--speed)_linear_infinite] snap-start overflow-hidden bg-repeat'
     >
       <div className='text-background mx-auto flex h-full max-w-7xl items-center justify-center px-4'>
-        <div className='grid grid-cols-1 items-center gap-6 lg:grid-cols-[max-content_1fr]'>
+        <div className='grid grid-cols-1 items-center gap-6 min-[1100px]:grid-cols-[max-content_1fr]'>
           <div
-            className={`${baloo2.className} flex flex-col items-center gap-6 lg:items-start`}
+            className={`${baloo2.className} flex flex-col items-center gap-6 min-[1100px]:items-start`}
           >
             <div className='relative w-fit'>
               <p className='text-7xl font-semibold sm:text-8xl'>FREE</p>
@@ -120,7 +120,7 @@ export function FreeToPlayPage() {
             </div>
           </div>
 
-          <div className='relative h-full lg:row-span-2'>
+          <div className='relative h-full min-[1100px]:row-span-2'>
             {selectedItem && (
               <>
                 <Image
@@ -139,7 +139,7 @@ export function FreeToPlayPage() {
             )}
           </div>
 
-          <div className='flex items-center justify-center gap-2 lg:justify-start'>
+          <div className='flex items-center justify-center gap-2 min-[1100px]:justify-start'>
             <button
               onClick={() => {
                 if (!carouselApi) return;
