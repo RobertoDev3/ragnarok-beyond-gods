@@ -97,9 +97,9 @@ export function FreeToPlayPage() {
             className={`${baloo2.className} flex flex-col items-center gap-6 lg:items-start`}
           >
             <div className='relative w-fit'>
-              <p className='text-8xl font-semibold'>FREE</p>
+              <p className='text-7xl font-semibold sm:text-8xl'>FREE</p>
               <p
-                className={`${rougeScript.className} -rotate-5 text-secondary absolute -bottom-5 left-1/2 -translate-x-1/2 text-nowrap text-6xl font-bold`}
+                className={`${rougeScript.className} -rotate-5 text-secondary absolute -bottom-3 left-1/2 -translate-x-1/2 text-nowrap text-4xl font-bold sm:-bottom-5 sm:text-6xl`}
               >
                 to Play
               </p>
@@ -161,7 +161,7 @@ export function FreeToPlayPage() {
               setApi={setCarouselApi}
               className='w-full max-w-sm'
             >
-              <CarouselContent>
+              <CarouselContent className='h-[100px] items-center'>
                 {carrouselImages.map((item, index) => {
                   const isActive = index === selectedIndex;
                   return (
@@ -172,11 +172,11 @@ export function FreeToPlayPage() {
                         setSelectedIndex(index);
                         carouselApi.scrollTo(index);
                       }}
-                      className='basis-1/3'
+                      className='basis-1/2 min-[420px]:basis-1/3'
                       title={item.name}
                     >
                       <div
-                        className={`${isActive && '-rotate-10 border-background/10 border-4'}`}
+                        className={`rounded-lg ${isActive && '-rotate-10 border-background/10 border-4'}`}
                       >
                         <Image
                           alt={`Carta de ${item.name}`}
