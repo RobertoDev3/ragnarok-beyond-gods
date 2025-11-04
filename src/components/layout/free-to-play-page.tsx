@@ -148,6 +148,7 @@ export function FreeToPlayPage() {
                 setSelectedIndex(prev);
                 carouselApi.scrollTo(prev);
               }}
+              className='active:-translate-x-1'
             >
               <Image alt='Seta para esquerda' src={Arrow} className='size-15' />
             </button>
@@ -197,6 +198,7 @@ export function FreeToPlayPage() {
                 setSelectedIndex(next);
                 carouselApi.scrollTo(next);
               }}
+              className='active:translate-x-1'
             >
               <Image
                 alt='Seta para direita'
